@@ -66,7 +66,7 @@ public class HomePageObject {
 
     private WebDriver webDriver;
 
-    HomePageObject(WebDriver webDriver) {
+    public HomePageObject(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
@@ -224,7 +224,7 @@ public class HomePageObject {
         Thread.sleep(2000);
     }
 
-    static class CredentialInTest {
+    public static class CredentialInTest {
         public CredentialInTest(String id, String url, String username, String password) {
             this.id = id;
             this.url = url;
